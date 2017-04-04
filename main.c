@@ -5,6 +5,7 @@
 int main()
 {
     Node *root = NULL;
+    TST_Bool f = FALSE;
 
     insert(&root, "cat");
     insert(&root, "cats");
@@ -14,8 +15,9 @@ int main()
     printf("Following is traversal of ternary search tree\n");
     traverseTST(root);
 
-    printf("\nFollowing are search results for cats, bu and cat respectively\n");
-    search(root, "cats");
+    printf("\nFollowing are search results for cats, up, bu and cat respectively\n");
+    search(root,"cats");
+    search(root, "up");
     search(root, "bu");
     search(root, "cat");
 
